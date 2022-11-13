@@ -9,7 +9,10 @@ require'nvim-web-devicons'.setup {}
 
 require'nvim-treesitter.configs'.setup {
 	highlight = {enable = true},
-	rainbow = {enable = true}
+	rainbow = {
+		enable = true,
+		extended_mode = false,
+	}
 }
 
 require'dracula'.setup {

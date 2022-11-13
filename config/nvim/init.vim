@@ -15,7 +15,7 @@ Plug 'kyazdani42/nvim-web-devicons' "fancy icons
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Auto-Completion
 "Plug 'OmniSharp/omnisharp-vim' " C# syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " syntax color
-Plug 'p00f/nvim-ts-rainbow' "funny brackets
+Plug 'p00f/nvim-ts-rainbow' " funny brackets
 Plug 'puremourning/vimspector' " Debugger
 "Plug 'mfussenegger/nvim-dap'
 "Plug 'rcarriga/nvim-dap-ui'
@@ -26,6 +26,7 @@ call plug#end()
 source ~/.config/nvim/lua.vim
 source ~/.config/nvim/basics.vim
 source ~/.config/nvim/coc.vim
+source ~/.config/nvim/lspconfig.vim
 "source ~/.config/nvim/dap.vim
 
 let g:vimspector_enable_mappings = 'HUMAN'
