@@ -12,8 +12,8 @@ nnoremap <C-J> :bprev<CR>
 nnoremap <C-K> :bnext<CR>
 
 " Map yank to the clipboard buffer
-"set clipboard+=unnamedplus
-set clipboard=unnamed
+set clipboard+=unnamedplus
+"set clipboard=unnamed
 
 " indentation
 set autoindent

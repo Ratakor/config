@@ -27,8 +27,17 @@ end
 
 -- this part is telling Neovim to use the lsp server
 require'lspconfig'.ocamlls.setup{}
-require'lspconfig'.csharp_ls.setup{}
-local servers = { 'pyright', 'tsserver', }
+
+---- omnisharp lsp config
+--require'lspconfig'.omnisharp.setup {
+--  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+--  on_attach = function(_, bufnr)
+--    vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+--  end,
+--  cmd = { "~/.vim/plugged/omnisharp-vim/bin/omnisharp/run", "--languageserver" , "--hostPID", tostring(pid) },
+--}
+
+local servers = { 'pyright', 'tsserver', } -- 'csharp_ls', }
 for _, lsp in pairs(servers) do
     require('lspconfig')[lsp].setup {
         on_attach = on_attach,
