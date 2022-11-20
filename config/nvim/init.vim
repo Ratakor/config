@@ -3,7 +3,7 @@ call plug#begin('~/.vim/plugged')
 "Plug 'dracula/vim', { 'as': 'dracula' } " official dracula theme
 "Plug 'Ratakor/dracula.nvim' " dracula theme
 Plug 'Mofiqul/dracula.nvim' " dracula theme with treesitter
-Plug 'ellisonleao/gruvbox.nvim' " gruvbox theme
+"Plug 'ellisonleao/gruvbox.nvim' " gruvbox theme
 Plug 'bronson/vim-trailing-whitespace' " FixWhitespace
 Plug 'airblade/vim-gitgutter' " hud for git in vim
 Plug 'tpope/vim-fugitive' " git in vim
@@ -16,9 +16,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} " Auto-Completion
 "Plug 'OmniSharp/omnisharp-vim' " C# syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " syntax color
 Plug 'p00f/nvim-ts-rainbow' " funny brackets
-Plug 'puremourning/vimspector' " Debugger
-"Plug 'mfussenegger/nvim-dap'
-"Plug 'rcarriga/nvim-dap-ui'
+"Plug 'puremourning/vimspector' " Debugger
 Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
