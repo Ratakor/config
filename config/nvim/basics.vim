@@ -1,6 +1,9 @@
 " Enable line number and relative number
 set nu rnu
 
+" disable the mouse
+set mouse=
+
 " Add a column at 80 characters
 if (exists('+colorcolumn'))
     set colorcolumn=80
