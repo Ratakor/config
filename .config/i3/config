@@ -200,11 +200,18 @@ bindsym $mod+r mode "resize"
 #    binding_mode       #FF5555 #FF5555 #F8F8F2
 #  }
 #}
-# pasink pasource \
 
+# Wallpaper
+# exec_always feh --bg-fill $HOME/Pictures/Wallpapers/space.jpg
+
+# print screen
+# scrot $HOME/Pictures/`date +%Y-%m-%d_%H:%M:%S`.png
+bindsym Print exec flameshot gui
+
+# pasource
 bar {
 	status_command /usr/bin/bumblebee-status \
-		-m cpu memory battery datetime \
+		-m cpu memory battery nic pasink datetime \
 		-p datetime.format="%d/%m/%y %H:%M:%S" \
 		-t dracula-powerline
 	position top
