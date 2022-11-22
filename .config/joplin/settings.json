@@ -1,0 +1,10 @@
+{
+	"$schema": "https://joplinapp.org/schema/settings.json",
+	"api.token": "6436e374d20b9fafedce97bafbd3e801a31c5ce05da55a42dcf409eae7ba4ba6d92b3e4c591e266d1bbbd7f7db1d58f2463148407239b3dc859612a23e6b4387",
+	"locale": "en_US",
+	"trackLocation": false,
+	"editor": "nvim",
+	"sync.6.path": "https://cloud.ratakor.com:5006/Joplin",
+	"sync.6.username": "Ratakor",
+	"sync.target": 6
+}
