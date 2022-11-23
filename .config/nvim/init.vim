@@ -18,6 +18,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " syntax color
 Plug 'p00f/nvim-ts-rainbow' " funny brackets
 "Plug 'puremourning/vimspector' " Debugger
 Plug 'neovim/nvim-lspconfig'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -31,3 +32,6 @@ let g:vimspector_enable_mappings = 'HUMAN'
 
 " Open Telescope with <C-S>
 nnoremap <C-S> :Telescope find_files<CR>
+
+" Open NERDTree with <C-N>
+nnoremap <C-N> :NERDTreeToggle<CR>

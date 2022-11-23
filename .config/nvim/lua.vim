@@ -8,9 +8,14 @@ require'lualine'.setup {
 require'nvim-web-devicons'.setup {}
 
 require'nvim-treesitter.configs'.setup {
-	highlight = {enable = true},
+	highlight = {
+		enable = true,
+		--disable = {"c_sharp"},
+	},
+
 	rainbow = {
 		enable = true,
+		--disable = {"c_sharp"},
 		extended_mode = false,
 	}
 }
