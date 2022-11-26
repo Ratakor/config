@@ -18,7 +18,8 @@ fi
 # Put your fun stuff here.
 # source ~/.bashrc
 alias sudo="doas"
-alias vim="nvim"
+alias v="nvim"
+alias :q="exit"
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 export PATH=$PATH:$HOME/.dotnet
