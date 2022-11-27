@@ -20,16 +20,19 @@ fi
 
 # Aliases
 
-alias sudo="doas"
-alias v="nvim"
-alias :q="exit"
-alias rm="rm -v"
+alias sudo='doas'
+alias v='nvim'
+alias :q='exit'
+alias rm='rm -v'
 alias cp='cp -v'
 alias mv='mv -v'
 alias ls='lsd --color=auto'
 alias la='ls -a'
-alias ll='ls -lh'
+alias ll='ls -lah'
 alias ..='cd ..'
+alias TP='cd Epita/epita-prepa-acdc-prog-101-p-03-2027-thomas.cremel/Survivor'
+alias PT='cd Epita/epita-prepa-acdc-prog-101-p-03-2027-thomas.cremel/Survivor'
+#alias S2='cd Epita/...projets2'
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
