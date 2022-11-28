@@ -19,6 +19,7 @@ Plug 'p00f/nvim-ts-rainbow' " funny brackets
 "Plug 'puremourning/vimspector' " Debugger
 Plug 'neovim/nvim-lspconfig'
 Plug 'preservim/nerdtree'
+"Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " yarn is not installed
 
 call plug#end()
 

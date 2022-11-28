@@ -30,12 +30,12 @@ alias ls='lsd --color=auto'
 alias la='ls -a'
 alias ll='ls -lah'
 alias ..='cd ..'
-alias poweroff='doas poweroff'
-alias reboot='doas reboot'
+alias xdg-open="Firefox --new-tab"
+alias off='doas poweroff'
 alias TP='cd ~/Epita/epita-prepa-acdc-prog-101-p-03-2027-thomas.cremel/Survivor'
 alias PT='cd ~/Epita/epita-prepa-acdc-prog-101-p-03-2027-thomas.cremel/Survivor'
 #alias S2='cd ~/Epita/...projets2'
-alias AFIT='cd ~/Epita/thomas.cremel/'
+alias AFIT='cd ~/Epita/thomas.cremel/Source'
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
