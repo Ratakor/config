@@ -34,4 +34,4 @@ colorscheme dracula
 
 " Autocorrect
 abbr hte the
-
+abbr git Git

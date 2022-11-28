@@ -26,7 +26,6 @@ source ~/.config/nvim/lua.vim
 source ~/.config/nvim/basics.vim
 source ~/.config/nvim/coc.vim
 source ~/.config/nvim/lspconfig.vim
-"source ~/.config/nvim/dap.vim
 
 let g:vimspector_enable_mappings = 'HUMAN'
 
