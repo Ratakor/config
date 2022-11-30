@@ -15,8 +15,8 @@ require'nvim-treesitter.configs'.setup {
 
 	rainbow = {
 		enable = true,
-		--disable = {"c_sharp"},
 		extended_mode = false,
+		--disable = {"c_sharp"},
 	}
 }
 

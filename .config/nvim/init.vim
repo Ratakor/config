@@ -12,14 +12,16 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } " fuzzy finder
 "Plug 'sheerun/vim-polyglot' " syntax (useless with treesitter)
 Plug 'nvim-lualine/lualine.nvim' " bottom bar
 Plug 'kyazdani42/nvim-web-devicons' "fancy icons
+Plug 'preservim/nerdtree' " vs code be like
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Auto-Completion
-"Plug 'OmniSharp/omnisharp-vim' " C# syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " syntax color
 Plug 'p00f/nvim-ts-rainbow' " funny brackets
+Plug 'OmniSharp/omnisharp-vim' " C# syntax
 "Plug 'puremourning/vimspector' " Debugger
 Plug 'neovim/nvim-lspconfig'
-Plug 'preservim/nerdtree'
-"Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " yarn is not installed
+"Plug 'dense-analysis/ale'
+Plug 'vim-syntastic/syntastic'
+"Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " xdg-open doesn't work
 
 call plug#end()
 
@@ -35,3 +37,13 @@ nnoremap <C-S> :Telescope find_files<CR>
 
 " Open NERDTree with <C-N>
 nnoremap <C-N> :NERDTreeToggle<CR>
+
+" Disable OmniSharp Highlighting
+let g:OmniSharp_highlighting = 0
+
+" ALE + OmniSharp
+let g:ale_linters = { 'cs': ['OmniSharp'] }
+
+" Omnisharp + syntastic
+" :OmniSharpGlobalCodeCheck
+let g:syntastic_cs_checkers = ['code_checker']
