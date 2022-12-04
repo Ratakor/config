@@ -22,6 +22,7 @@ fi
 
 alias sudo='doas'
 alias v='nvim'
+alias python='python3'
 alias :q='exit'
 alias :Q='exit'
 alias rm='rm -v'
@@ -32,6 +33,7 @@ alias sl='lsd --color=auto'
 alias la='ls -a'
 alias ll='ls -lah'
 alias ..='cd ..'
+alias cs='cd'
 alias xdg-open="Firefox --new-tab"
 alias off='doas poweroff'
 alias TP='cd ~/Epita/epita-prepa-acdc-prog-101-p-03-2027-thomas.cremel/Survivor'
