@@ -4,6 +4,11 @@ set nu rnu
 " disable the mouse
 set mouse=
 
+" better <C-d> and <C-u>
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+
 " Add a column at 80 characters
 if (exists('+colorcolumn'))
     set colorcolumn=80

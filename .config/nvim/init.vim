@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 "Plug 'Ratakor/dracula.nvim' " dracula theme
 Plug 'Mofiqul/dracula.nvim' " dracula theme with treesitter
 "Plug 'ellisonleao/gruvbox.nvim' " gruvbox theme
+Plug 'mhinz/vim-startify' " start screen
 Plug 'bronson/vim-trailing-whitespace' " FixWhitespace
 Plug 'airblade/vim-gitgutter' " hud for git in vim
 Plug 'tpope/vim-fugitive' " git in vim
@@ -19,8 +20,8 @@ Plug 'p00f/nvim-ts-rainbow' " funny brackets
 Plug 'OmniSharp/omnisharp-vim' " C# syntax
 "Plug 'puremourning/vimspector' " Debugger
 Plug 'neovim/nvim-lspconfig'
-"Plug 'dense-analysis/ale'
-Plug 'vim-syntastic/syntastic'
+Plug 'dense-analysis/ale'
+"Plug 'vim-syntastic/syntastic'
 "Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " xdg-open doesn't work
 
 call plug#end()
@@ -41,9 +42,9 @@ nnoremap <C-N> :NERDTreeToggle<CR>
 " Disable OmniSharp Highlighting
 let g:OmniSharp_highlighting = 0
 
-" ALE + OmniSharp
-let g:ale_linters = { 'cs': ['OmniSharp'] }
-
 " Omnisharp + syntastic
 " :OmniSharpGlobalCodeCheck
-let g:syntastic_cs_checkers = ['code_checker']
+" let g:syntastic_cs_checkers = ['code_checker']
+
+" ALE + OmniSharp
+let g:ale_linters = { 'cs': ['OmniSharp'] }
