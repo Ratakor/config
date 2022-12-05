@@ -36,10 +36,10 @@ alias ..='cd ..'
 alias cs='cd'
 alias xdg-open="Firefox --new-tab"
 alias off='doas poweroff'
-alias TP='cd ~/Epita/epita-prepa-acdc-prog-101-p-03-2027-thomas.cremel/Survivor'
-alias PT='cd ~/Epita/epita-prepa-acdc-prog-101-p-03-2027-thomas.cremel/Survivor'
+alias TP='cd ~/Epita/S1/TP_C#/epita-prepa-acdc-prog-101-p-04-2027-thomas.cremel/Metamorphoses'
+alias PT='cd ~/Epita/S1/TP_C#/epita-prepa-acdc-prog-101-p-04-2027-thomas.cremel/Metamorphoses'
+alias AFIT='cd ~/Epita/S1/AFIT/thomas.cremel/Source'
 #alias S2='cd ~/Epita/...projets2'
-alias AFIT='cd ~/Epita/thomas.cremel/Source'
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
