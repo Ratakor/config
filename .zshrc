@@ -72,5 +72,5 @@ alias p='sudo pacman -Syu'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # .NET 7.0
-export PATH=$PATH:$HOME/.dotnet
-export DOTNET_ROOT=$HOME/.dotnet
+#export PATH=$PATH:$HOME/.dotnet
+#export DOTNET_ROOT=$HOME/.dotnet
