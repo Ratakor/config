@@ -46,7 +46,13 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
+# sudo not required for some system commands
+for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
+	alias $command="sudo $command"
+done; unset command
+
 # Aliases
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias sudo='doas'
 alias v='nvim'
 alias python='python3'
@@ -62,14 +68,11 @@ alias ll='ls -lah'
 alias ..='cd ..'
 alias cs='cd'
 #alias xdg-open="Firefox --new-tab"
-alias off='sudo poweroff'
-#alias TP='cd ~/Epita/S1/TP_C#/epita-prepa-acdc-prog-101-p-04-2027-thomas.cremel/Metamorphoses'
-#alias PT='cd ~/Epita/S1/TP_C#/epita-prepa-acdc-prog-101-p-04-2027-thomas.cremel/Metamorphoses'
-#alias AFIT='cd ~/Epita/S1/AFIT/thomas.cremel/Source'
+alias TP='cd ~/Epita/S1/TP_C#/epita-prepa-acdc-prog-101-p-04-2027-thomas.cremel/Metamorphoses'
+alias PT='cd ~/Epita/S1/TP_C#/epita-prepa-acdc-prog-101-p-04-2027-thomas.cremel/Metamorphoses'
+alias AFIT='cd ~/Epita/S1/AFIT/thomas.cremel/Source'
 #alias S2='cd ~/Epita/...projets2'
-alias 'sudo pacman -R'='sudo pacman -Rns'
-alias p='sudo pacman -Syu'
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias p='pacman'
 
 # .NET 7.0
 #export PATH=$PATH:$HOME/.dotnet
