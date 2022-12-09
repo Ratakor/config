@@ -8,9 +8,9 @@ PS1="%B%%n %~ $%b "
 stty stop undef		# Disable ctrl-s to freeze terminal.
 
 # History in cache directory:
+HISTFILE=~/.histfile
 HISTSIZE=10000000
 SAVEHIST=10000000
-HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -62,13 +62,14 @@ alias ll='ls -lah'
 alias ..='cd ..'
 alias cs='cd'
 #alias xdg-open="Firefox --new-tab"
-alias off='doas poweroff'
+alias off='sudo poweroff'
 #alias TP='cd ~/Epita/S1/TP_C#/epita-prepa-acdc-prog-101-p-04-2027-thomas.cremel/Metamorphoses'
 #alias PT='cd ~/Epita/S1/TP_C#/epita-prepa-acdc-prog-101-p-04-2027-thomas.cremel/Metamorphoses'
 #alias AFIT='cd ~/Epita/S1/AFIT/thomas.cremel/Source'
 #alias S2='cd ~/Epita/...projets2'
-alias 'pacman -R'='pacman -Rns'
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias 'sudo pacman -R'='sudo pacman -Rns'
+alias p='sudo pacman -Syu'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # .NET 7.0
 export PATH=$PATH:$HOME/.dotnet
