@@ -73,7 +73,3 @@ alias PT='cd ~/Epita/S1/TP_C#/epita-prepa-acdc-prog-101-p-04-2027-thomas.cremel/
 alias AFIT='cd ~/Epita/S1/AFIT/thomas.cremel/Source'
 #alias S2='cd ~/Epita/...projets2'
 alias p='pacman'
-
-# .NET 7.0
-#export PATH=$PATH:$HOME/.dotnet
-#export DOTNET_ROOT=$HOME/.dotnet
