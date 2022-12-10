@@ -218,7 +218,7 @@ bindsym $mod+F5 exec "xrandr --output eDP-1 --brightness 1.0"
 #bindsym Print exec flameshot gui
 
 # i3lock
-bindsym $mod+shift+x exec i3lock -i $HOME/Pictures/i3lock/i3lock.png
+bindsym $mod+shift+x exec i3lock -i $HOME/Pictures/i3lock/oopsie.png
 #bindsym $mod+shift+x exec bash $HOME/.i3lock-Image-Changer.sh $HOME/Pictures/i3lock
 
 # bar with bumblebee
