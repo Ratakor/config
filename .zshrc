@@ -58,6 +58,7 @@ alias v='nvim'
 alias python='python3'
 alias p='pacman'
 alias battery='acpi'
+alias image='sxiv'
 alias :q='exit'
 alias :Q='exit'
 alias rm='rm -vI'
@@ -80,3 +81,6 @@ alias TP='cd ~/Epita/S1/TP_C#/epita-prepa-acdc-prog-101-p-04-2027-thomas.cremel/
 alias PT='cd ~/Epita/S1/TP_C#/epita-prepa-acdc-prog-101-p-04-2027-thomas.cremel/Metamorphoses'
 alias AFIT='cd ~/Epita/S1/AFIT/thomas.cremel/Source'
 #alias S2='cd ~/Epita/...projets2'
+
+# opam configuration
+[[ ! -r /home/ratakor/.opam/opam-init/init.zsh ]] || source /home/ratakor/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
