@@ -47,7 +47,7 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # sudo not required for some system commands
-for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
+for command in mount umount sv pacman updatedb shutdown poweroff reboot ; do
 	alias $command="sudo $command"
 done; unset command
 
@@ -63,7 +63,7 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 alias mkdir='mkdir -pv'
 alias grep='grep --color=auto'
-alias diff='diff --color-auto'
+alias diff='diff --color=auto'
 alias ip='ip --color=auto'
 #alias ls='lsd'
 alias ls='exa'
