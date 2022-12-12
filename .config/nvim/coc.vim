@@ -1,3 +1,6 @@
+" CocInstall coc-texlab coc-pyright coc-sh coc-clangd coc-json
+" coc-rust-analyzer
+
 "" Some servers have issues with backup files, see #649.
 "set nobackup
 "set nowritebackup
