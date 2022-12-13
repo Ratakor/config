@@ -3,43 +3,32 @@
 setxkbmap fr us
 xrandr --dpi 96
 
-#killall feh
-#feh --bg-fill $HOME/Pictures/Wallpapers/...
+# background
+#feh --bg-fill $HOME/Pictures/Wallpapers/oopsie.png
+#--bh-scale
+xsetroot -solid "#282a36"
 
-#xsetroot -name ""
+# audio
+#killall pulseaudio
+#pulseaudio -k
+pulseaudio &
+pulseaudio --start &
+
+# bar
 killall dwmblocks
 dwmblocks &
+#slstatus &
+
+# eyesight
+killall redshift
+while pgrep -u $UID -x redshift >/dev/null; do sleep 1; done
+redshift -r -l 48.87:2.35 &
 
 xbanish &
 
 exec dwm
 
-## Screen
-#xset s off
-#xset -dpms
-#
-## Start Programs
-#
 ## compositor
 #killall picom
 #while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 #picom --experimental-backends --blur-background-fixed --blur-method "gaussian" --blur-size 10 --blur-deviation 5 --corner-radius 8 --round-borders 8 --backend glx --vsync &
-#
-## bg
-#killall feh
-#feh --bg-scale '/home/caden/Pictures/bg.png' &
-#
-## eyesight
-#killall redshift
-#while pgrep -u $UID -x redshift >/dev/null; do sleep 1; done
-#redshift -r -l 38.90:-77.16 &
-#
-## time
-#sudo sv restart openntpd
-#ntpd -s -d &
-#
-## pulseaudio
-#killall pulseaudio
-#pulseaudio -k
-#pulseaudio &
-#pulseaudio --start &
