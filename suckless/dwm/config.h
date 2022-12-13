@@ -75,6 +75,8 @@ static const Key keys[] = {
 	{ MODKEY,						XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,				XK_x,      spawn,		   {.v = slockcmd } },
 	{ 0,                            XK_Print,  spawn,          {.v = flameshotcmd } },
+	// { Fn,						F4 ?,	   ?		       xrandr --display eDP-1 --brightness decrease
+	//
 	{ MODKEY,                       XK_f,      togglefullscr,  {0} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
