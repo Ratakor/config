@@ -44,5 +44,6 @@ syntax enable
 colorscheme dracula
 
 " Autocorrect
+"setlocal spell spelllang=en_US
 abbr hte the
 abbr git Git
