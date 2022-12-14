@@ -3,7 +3,7 @@
 
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
-PS1="%B%n %~ $%b "
+PS1="%B%F{blue}%n %F{green}%~ %f$%b "
 #setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 
@@ -18,6 +18,13 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
+
+# Auto cd
+setopt AUTO_CD
+
+# Correction
+setopt CORRECT
+setopt CORRECT_ALL
 
 # vi mode
 bindkey -v
@@ -78,12 +85,12 @@ alias sl='ls'
 alias la='ls -a'
 alias ll='ls -lah'
 alias tree='ls --tree'
-alias ..='cd ..'
+#alias ..='cd ..'
 alias cs='cd'
 alias TP='cd ~/Epita/S1/TP/epita-prepa-acdc-prog-101-p-05-2027-thomas.cremel/ShopManager'
 alias PT='cd ~/Epita/S1/TP/epita-prepa-acdc-prog-101-p-05-2027-thomas.cremel/ShopManager'
 alias AFIT='cd ~/Epita/S1/AFIT/thomas.cremel/Source'
-alias S2='cd ~/Epita/S2/Projet'
+alias PROJET='cd ~/Epita/S2/Projet'
 
 # opam configuration
 [[ ! -r /home/ratakor/.opam/opam-init/init.zsh ]] || source /home/ratakor/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

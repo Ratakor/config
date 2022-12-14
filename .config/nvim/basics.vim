@@ -10,10 +10,10 @@ nnoremap <c-u> <c-u>zz
 
 " better j, k, 0 and $
 " or use gqq
-nnoremap j gj
-nnoremap k gk
-nnoremap 0 g0
-nnoremap $ g$
+"nnoremap j gj
+"nnoremap k gk
+"nnoremap 0 g0
+"nnoremap $ g$
 
 " Add a column at 80 characters
 if (exists('+colorcolumn'))

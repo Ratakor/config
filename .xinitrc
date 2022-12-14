@@ -21,14 +21,9 @@ dwmblocks &
 
 # eyesight
 killall redshift
-while pgrep -u $UID -x redshift >/dev/null; do sleep 1; done
+#while pgrep -u $UID -x redshift >/dev/null; do sleep 1; done
 redshift -r -l 48.87:2.35 &
 
 xbanish &
 
 exec dwm
-
-## compositor
-#killall picom
-#while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
-#picom --experimental-backends --blur-background-fixed --blur-method "gaussian" --blur-size 10 --blur-deviation 5 --corner-radius 8 --round-borders 8 --backend glx --vsync &
