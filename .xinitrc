@@ -2,6 +2,8 @@
 
 setxkbmap fr us
 xrandr --dpi 96
+#xrandr --output eDP-1 --scale 1x1
+
 
 # background
 #feh --bg-fill $HOME/Pictures/Wallpapers/oopsie.png
