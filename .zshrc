@@ -23,8 +23,8 @@ _comp_options+=(globdots)		# Include hidden files.
 setopt AUTO_CD
 
 # Correction
-setopt CORRECT
-setopt CORRECT_ALL
+#setopt CORRECT
+#setopt CORRECT_ALL
 
 # vi mode
 bindkey -v
@@ -90,7 +90,7 @@ alias cs='cd'
 alias TP='cd ~/Epita/S1/TP/epita-prepa-acdc-prog-101-p-05-2027-thomas.cremel/ShopManager'
 alias PT='cd ~/Epita/S1/TP/epita-prepa-acdc-prog-101-p-05-2027-thomas.cremel/ShopManager'
 alias AFIT='cd ~/Epita/S1/AFIT/thomas.cremel/Source'
-alias PROJET='cd ~/Epita/S2/Projet'
+alias catchos='cd ~/Epita/S2/catchos'
 
 # opam configuration
 [[ ! -r /home/ratakor/.opam/opam-init/init.zsh ]] || source /home/ratakor/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

@@ -7,7 +7,7 @@ static const Block blocks[] = {
 	//{ "",			"netlan",		1,			0 },	// n -> Lan network
 	{" ", "acpi | awk '/0:/ { print $3\" \"$4 }' | sed s/,//g",			5,                  0},
 	//{" ", "/home/ratakor/suckless/dwmblocks/volume",						0,					10},
-	{" ", "/home/ratakor/suckless/dwmblocks/volume",						1,					0},
+	{" ", "$HOME/suckless/dwmblocks/volume",								1,					0},
 	{" ", "date '+%A %d %B %Y'",											3600,				0},
 	{" ", "date '+%H:%M:%S'",												1,					0},
 };
