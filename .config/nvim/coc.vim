@@ -1,4 +1,4 @@
-let g:coc_global_extensions=[ 'coc-texlab', 'coc-pyright', 'coc-sh', 'coc-clangd', 'coc-json', 'coc-html', 'coc-css', 'coc-rust-analyzer', 'coc-copilot' ]
+let g:coc_global_extensions=[ 'coc-texlab', 'coc-pyright', 'coc-sh', 'coc-clangd', 'coc-json', 'coc-html', 'coc-css', 'coc-rust-analyzer' ]
 
 "" Some servers have issues with backup files, see #649.
 "set nobackup

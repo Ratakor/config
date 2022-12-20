@@ -71,7 +71,7 @@ alias audio='mpv --no-video'
 alias pdf='evince'
 alias :q='exit'
 alias :Q='exit'
-alias rm='rm -rvI'
+alias rm='rm -vI'
 alias rmdir='rmdir -v'
 alias cp='cp -riv'
 alias mv='mv -iv'
@@ -89,8 +89,8 @@ alias tree='ls --tree'
 alias cs='cd'
 alias TP='cd ~/Epita/S1/TP/epita-prepa-acdc-prog-101-p-05-2027-thomas.cremel/ShopManager'
 alias PT='cd ~/Epita/S1/TP/epita-prepa-acdc-prog-101-p-05-2027-thomas.cremel/ShopManager'
-alias AFIT='cd ~/Epita/S1/AFIT/thomas.cremel/Source'
 alias catchos='cd ~/Epita/S2/catchos'
+alias spotifyd='spotifyd --no-daemon'
 
 # opam configuration
 [[ ! -r /home/ratakor/.opam/opam-init/init.zsh ]] || source /home/ratakor/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

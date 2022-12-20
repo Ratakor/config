@@ -64,7 +64,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-c", "-m", dmenumon, NULL };
+static const char *dmenu_websearchcmd[] = { "./dmenu_websearch", NULL };
 static const char *termcmd[]  = { TERMINAL, NULL };
 static const char *slockcmd[] = { "slock", NULL };
 static const char *flameshotcmd[] = { "flameshot", "gui", NULL };
@@ -72,6 +73,7 @@ static const char *flameshotcmd[] = { "flameshot", "gui", NULL };
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,						XK_s,	   spawn,		   {.v = dmenu_websearchcmd } },
 	{ MODKEY,						XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,				XK_x,      spawn,		   {.v = slockcmd } },
 	{ 0,                            XK_Print,  spawn,          {.v = flameshotcmd } },
