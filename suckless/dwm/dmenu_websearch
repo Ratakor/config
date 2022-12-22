@@ -1,7 +1,7 @@
 ##!/bin/bash
 
-URL='https://librex.beparanoid.de/search.php?q='
+URL='https://librex.ratakor.com/search.php?q='
 QUERY=$(echo '' | dmenu -p "Search:" -l 0)
 if [ -n "$QUERY" ]; then
-  xdg-open "${URL}${QUERY}" 2> /dev/null
+  xdg-open "${URL}${QUERY}&t=0" 2> /dev/null
 fi
