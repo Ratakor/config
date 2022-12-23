@@ -11,10 +11,10 @@ xrandr --dpi 96
 xsetroot -solid "#282a36"
 
 # audio
-#killall pulseaudio
-#pulseaudio -k
-pulseaudio &
-pulseaudio --start &
+##killall pulseaudio
+##pulseaudio -k
+#pulseaudio &
+#pulseaudio --start &
 
 # bar
 killall dwmblocks

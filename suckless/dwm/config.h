@@ -7,7 +7,7 @@
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 /*static const char *fonts[]          = { "monospace:size=10" };*/
-static const char *fonts[]          = { "agave Nerd Font Mono:size=18" };
+static const char *fonts[]          = { "agave Nerd Font Mono:size=10" }; //18
 static const char normbgcolor[]			= "#282a36";
 static const char normbordercolor[]		= "#282a36";
 static const char normfgcolor[]			= "#f8f8f2";
