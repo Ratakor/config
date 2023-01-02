@@ -6,7 +6,8 @@ setxkbmap fr us
 
 
 # background
-feh --bg-fill $HOME/Pictures/Wallpapers/ppwp.jpg
+feh --bg-fill $HOME/Pictures/Wallpapers/aiko.jpg
+#feh --bg-fill $HOME/Pictures/Wallpapers/ppwp.jpg
 #xsetroot -solid "#282a36"
 
 # audio
@@ -26,5 +27,6 @@ killall redshift
 redshift -r -l 48.87:2.35 &
 
 xbanish &
+xcompmgr &
 
 exec dwm

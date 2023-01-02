@@ -23,6 +23,6 @@ require'nvim-treesitter.configs'.setup {
 require'dracula'.setup {
 	show_end_of_buffer = true,
 	lualine_bg_color = "#44475a",
-	--transparent_bg = true,
+	transparent_bg = true,
 }
 END
