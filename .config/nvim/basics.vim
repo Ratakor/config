@@ -50,4 +50,3 @@ nnoremap <C-K> :bnext<CR>
 "map <leader>o :setlocal spell! spelllang=en_us<CR>
 "setlocal spell spelllang=en_US
 abbr hte the
-abbr git Git

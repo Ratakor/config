@@ -4,7 +4,8 @@
 const unsigned int interval = 1000;
 
 /* text to show if no value can be retrieved */
-static const char unknown_str[] = "n/a";
+//static const char unknown_str[] = "n/a";
+static const char unknown_str[] = "not connected";
 
 /* maximum output string length */
 #define MAXLEN 2048
@@ -65,11 +66,13 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ ram_used, " %s/",		NULL },
+	{ cpu_perc, " %s% | ",		NULL },
+	{ ram_used, "ﳔ %s/",		NULL },
 	{ ram_total, "%s | ",		NULL },
-	{ wifi_essid, " %s | ",	"wlan0" },
-	{ battery_state," %s",     "BAT0" },
-	{ battery_perc, " s\% | ", "BAT0" },
+	//{ battery_state, " %s ", "BAT0" },
+	{ battery_perc, " %s% | ", "BAT0" },
+	{ wifi_essid, " %s | ",	"wlp2s0" },
+	{ vol_perc, " %s | ",		"/dev/mixer" },
 	{ datetime, " %s | ",      "%F" },
 	{ datetime, " %s",         "%T" },
 };

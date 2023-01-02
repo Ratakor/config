@@ -53,14 +53,14 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-# sudo not required for some system commands
+# doas not required for some system commands
 for command in mount umount sv pacman updatedb shutdown poweroff reboot ; do
-	alias $command="sudo $command"
+	alias $command="doas $command"
 done; unset command
 
 # Aliases
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias sudo='doas'
+#alias sudo='doas'
 alias v='nvim'
 alias vim='nvim'
 alias python='python3'
@@ -71,6 +71,7 @@ alias video='mpv'
 alias audio='mpv --no-video'
 alias music='mpv --no-video --shuffle --loop-playlist'
 alias pdf='zathura'
+alias md='glow'
 alias :q='exit'
 alias :Q='exit'
 alias rm='rm -vI'
@@ -83,7 +84,7 @@ alias diff='diff --color=auto'
 alias ip='ip --color=auto'
 #alias ls='lsd'
 alias ls='exa'
-alias sl='ls'
+#alias sl='ls'
 alias la='ls -a'
 alias ll='ls -lah'
 alias tree='ls --tree'

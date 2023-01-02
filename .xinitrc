@@ -2,13 +2,12 @@
 
 setxkbmap fr us
 #xrandr --dpi 96
-#xrandr --output eDP-1 --scale 1x1
+#xrandr --output LVDS-1 --off
 
 
 # background
-#feh --bg-fill $HOME/Pictures/Wallpapers/oopsie.png
-#--bh-scale
-xsetroot -solid "#282a36"
+feh --bg-fill $HOME/Pictures/Wallpapers/ppwp.jpg
+#xsetroot -solid "#282a36"
 
 # audio
 ##killall pulseaudio
