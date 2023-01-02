@@ -30,7 +30,7 @@ typedef struct {
 } Drw;
 
 /* Drawable abstraction */
-Drw *drw_create(Display *dpy, int screen, Window win, unsigned int w, unsigned int h, Visual*, unsigned int, Colormap);
+Drw *drw_create(Display *dpy, int screen, Window win, unsigned int w, unsigned int h, Visual *visual, unsigned int depth, Colormap cmap);
 void drw_resize(Drw *drw, unsigned int w, unsigned int h);
 void drw_free(Drw *drw);
 
@@ -38,7 +38,6 @@ void drw_free(Drw *drw);
 Fnt *drw_fontset_create(Drw* drw, const char *fonts[], size_t fontcount);
 void drw_fontset_free(Fnt* set);
 unsigned int drw_fontset_getwidth(Drw *drw, const char *text);
-unsigned int drw_fontset_getwidth_clamp(Drw *drw, const char *text, unsigned int n);
 void drw_font_getexts(Fnt *font, const char *text, unsigned int len, unsigned int *w, unsigned int *h);
 
 /* Colorscheme abstraction */
