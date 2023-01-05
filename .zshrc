@@ -61,12 +61,13 @@ done; unset command
 # Aliases
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 #alias sudo='doas'
+# su -c "cmd"
 alias v='nvim'
 alias vim='nvim'
 alias python='python3'
 alias p='pacman'
 alias battery='acpi'
-alias image='sxiv'
+alias image='sxiv -a'
 alias video='mpv'
 alias audio='mpv --no-video'
 alias music='mpv --no-video --shuffle --loop-playlist'
