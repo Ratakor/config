@@ -54,7 +54,7 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # doas not required for some system commands
-for command in mount umount sv pacman updatedb shutdown poweroff reboot ; do
+for command in mount umount sv pacman updatedb shutdown poweroff reboot nmtui ; do
 	alias $command="doas $command"
 done; unset command
 
@@ -93,9 +93,7 @@ alias tree='ls --tree'
 alias cs='cd'
 alias TP='cd ~/Epita/S2/TP'
 alias PT='TP'
-alias cours='cd ~/Epita/S1/Cours'
 alias catchos='cd ~/Epita/S2/catchos'
-alias spotifyd='spotifyd --no-daemon'
 alias music-dlp='yt-dlp -f 'ba' -x --audio-format mp3'
 
 # opam configuration
