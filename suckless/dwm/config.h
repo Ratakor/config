@@ -123,7 +123,8 @@ static const Key keys[] = {
 	TAGKEYS(                 XK_7,         			                   	6)
 	TAGKEYS(                 XK_8,         			                   	7)
 	TAGKEYS(                 XK_9,         			                   	8)
-	{ MODKEY|ShiftMask,      XK_e,         			   quit,           	{0} },
+	{ MODKEY|ShiftMask,      XK_e,         			   quitprompt,     	{0} },
+	{ MODKEY|ShiftMask,		 XK_w,					   spawn,			SHCMD("$HOME/.scripts/shutdown") },
 	/*{ 0, 					 XF86XK_AudioPrev,		   spawn,		   	{.v = (const char*[]){ "mpc", "prev", NULL } } },
 	{ 0, 					 XF86XK_AudioNext,		   spawn,		   	{.v = (const char*[]){ "mpc",  "next", NULL } } },
 	{ 0, 					 XF86XK_AudioPlay,		   spawn,		   	{.v = (const char*[]){ "mpc", "play", NULL } } },

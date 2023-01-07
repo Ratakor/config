@@ -1,7 +1,5 @@
-##!/bin/bash
+#!/bin/bash
 
 URL='https://librex.ratakor.com/search.php?q='
-QUERY=$(echo '' | dmenu -p "Search:" -l 0)
-if [ -n "$QUERY" ]; then
-  xdg-open "${URL}${QUERY}&t=0" 2> /dev/null
-fi
+QUERY=$(printf '' | dmenu -p "Search:" -l 0)
+[[ -n "$QUERY" ]] && xdg-open "${URL}${QUERY}&t=0" 2> /dev/null
