@@ -94,7 +94,9 @@ alias cs='cd'
 alias TP='cd ~/Epita/S2/TP'
 alias PT='TP'
 alias catchos='cd ~/Epita/S2/catchos'
-alias music-dlp='yt-dlp -f 'ba' -x --audio-format mp3'
+alias yt-dlp='yt-dlp --no-continue --no-overwrites --embed-metadata --embed-thumbnail'
+alias video-dlp="yt-dlp"
+alias music-dlp="yt-dlp -f 'ba' -x --audio-format mp3"
 
 # opam configuration
 [[ ! -r /home/ratakor/.opam/opam-init/init.zsh ]] || source /home/ratakor/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
