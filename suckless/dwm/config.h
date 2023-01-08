@@ -84,7 +84,7 @@ static const Key keys[] = {
 	//{ MODKEY|ShiftMask,	     XK_x,         			   spawn,		   	SHCMD("slock") },
 	{ 0, 					 XF86XK_ScreenSaver,	   spawn,		   	SHCMD("slock & xset dpms force off") }, //; mpc pause; pause mpv ?
 	//{ 0,                     XK_Print,     			   spawn,          	SHCMD("flameshot gui") },
-	{ 0,                     XK_Print,     			   spawn,          	SHCMD("scrot -s $HOME/Pictures/Screenshots/'%Y-%m-%d_%H:%M:$%.png' -e 'optipng $f'") },
+	{ 0,                     XK_Print,     			   spawn,          	SHCMD("scrot -s $HOME/Pictures/Screenshots/'%Y-%m-%d_%H:%M:%S.png' -e 'optipng $f'") },
 	{ ShiftMask,             XK_Print,     			   spawn,          	SHCMD("scrot $HOME/Pictures/Screenshots/'%Y-%m-%d_%H:%M:%S.png' -e 'optipng $f'") },
 	{ MODKEY,			     XK_equal,     			   spawn,          	SHCMD("pamixer -i 5; pkill -RTMIN+10 dwmblocks") },
 	{ MODKEY,			     XK_minus,     			   spawn,          	SHCMD("pamixer -d 5; pkill -RTMIN+10 dwmblocks") },
