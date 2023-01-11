@@ -88,6 +88,8 @@ static const Key keys[] = {
 	{ ShiftMask,             XK_Print,     			   spawn,          	SHCMD("scrot $HOME/Pictures/Screenshots/'%Y-%m-%d_%H:%M:%S.png' -e 'optipng $f'") },
 	{ MODKEY,			     XK_equal,     			   spawn,          	SHCMD("pamixer -i 5; pkill -RTMIN+10 dwmblocks") },
 	{ MODKEY,			     XK_minus,     			   spawn,          	SHCMD("pamixer -d 5; pkill -RTMIN+10 dwmblocks") },
+	/*{ MODKEY,				 XF86XK_AudioRaiseVolume,  spawn,			SHCMD("pamixer -i 5; pkill -RTMIN+10 dwmblocks") },
+	{ MODKEY,				 XF86XK_AudioLowerVolume,  spawn,			SHCMD("pamixer -d 5; pkill -RTMIN+10 dwmblocks") },*/
 	{ MODKEY,                XK_f,         			   togglefullscr,  	{0} },
 	{ MODKEY,                XK_b,         			   togglebar,      	{0} },
 	{ MODKEY,                XK_j,         			   focusstack,     	{.i = +1 } },

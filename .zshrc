@@ -1,3 +1,6 @@
+mesofetch
+when
+
 # fun stuff
 # source ~/.zshrc
 
@@ -73,6 +76,7 @@ alias audio='mpv --no-video'
 alias music='mpv --no-video --shuffle --loop-playlist'
 alias pdf='zathura'
 alias md='glow'
+alias timer='termdown'
 alias :q='exit'
 alias :Q='exit'
 alias rm='rm -vI'
@@ -91,12 +95,16 @@ alias ll='ls -lah'
 alias tree='ls --tree'
 #alias ..='cd ..'
 alias cs='cd'
-alias TP='cd ~/Epita/S2/TP'
+alias TP='cd ~/Epita/S2/TP/epita-prepa-acdc-prog-102-p-01-2027-thomas.cremel'
 alias PT='TP'
 alias catchos='cd ~/Epita/S2/catchos'
+alias AFIT='cd ~/Epita/S1/AFIT/Source'
 alias yt-dlp='yt-dlp --no-continue --no-overwrites --embed-metadata --embed-thumbnail'
 alias video-dlp="yt-dlp"
 alias music-dlp="yt-dlp -f 'ba' -x --audio-format mp3"
+alias 7zip='7z'
+alias p7zip='7z'
+alias calendar='when c'
 
 # opam configuration
 [[ ! -r /home/ratakor/.opam/opam-init/init.zsh ]] || source /home/ratakor/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
